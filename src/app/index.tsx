@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = () => (
-  <div >
+  <div>
     <span className="nes-text is-primary">
       TODO
     </span>

@@ -1,5 +1,6 @@
 {
   "extends": [
+    "airbnb",
     "airbnb-typescript"
   ],
 
@@ -8,12 +9,20 @@
   },
 
   "rules": {
+    // Base
     "brace-style": "off",
-    "@typescript-eslint/brace-style": "off",
     "no-underscore-dangle": "off",
+
+    // Imports
     "import/no-extraneous-dependencies": "off",
+    "import/newline-after-import": "off", 
+
+    // React
+    "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
-    "import/newline-after-import": "off"
+
+    // Typescript
+    "@typescript-eslint/brace-style": "off",
   },
 
   "env": {
