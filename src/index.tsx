@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import 'nes.css/css/nes.min.css';
+
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 
