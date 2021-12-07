@@ -1,0 +1,21 @@
+:root {
+  --background-default: #212529;
+  --spacing: 8px;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--background-default);
+}
+
+body {
+  background-color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
