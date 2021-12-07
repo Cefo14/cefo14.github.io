@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './assets/css/nes.min.css';
+import './assets/css/index.css';
+import 'normalize.css';
 
 import App from './app';
 import reportWebVitals from './reportWebVitals';

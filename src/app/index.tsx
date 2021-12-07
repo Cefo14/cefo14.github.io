@@ -1,10 +1,15 @@
 import React from 'react';
 
+import Text from '../components/Text';
+
 const App = () => (
   <div>
-    <span className="nes-text is-primary">
-      TODO
-    </span>
+    <Text>Normal</Text>
+    <Text variant="primary">Primary</Text>
+    <Text variant="success">Success</Text>
+    <Text variant="warning">Warning</Text>
+    <Text variant="error">Error</Text>
+    <Text variant="disabled">Disabled</Text>
   </div>
 );
 
