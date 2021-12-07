@@ -22,7 +22,7 @@
     "react/react-in-jsx-scope": "off",
 
     // Typescript
-    "@typescript-eslint/brace-style": "off",
+    "@typescript-eslint/brace-style": "off"
   },
 
   "env": {
