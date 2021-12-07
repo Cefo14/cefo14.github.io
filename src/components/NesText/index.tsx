@@ -1,11 +1,11 @@
 import React, { FC, memo } from 'react';
 import clsx from 'clsx';
 
-import TextProps from './TextPropTypes';
+import NesTextProps from './NesTextPropTypes';
 
-const Text: FC<TextProps> = ({
+const NesText: FC<NesTextProps> = ({
   children,
-  variant,
+  variant = 'text',
   component = 'div',
 }) => {
   const TextTagComponent = component;
@@ -14,7 +14,10 @@ const Text: FC<TextProps> = ({
     <TextTagComponent
       className={clsx(
         'nes-text',
-        { [`is-${variant}`]: Boolean(variant) },
+        {
+          [`is-${variant}`]: Boolean(variant),
+          'text-color': variant === 'text',
+        },
       )}
     >
       { children }
@@ -22,4 +25,4 @@ const Text: FC<TextProps> = ({
   );
 };
 
-export default memo(Text);
+export default memo(NesText);

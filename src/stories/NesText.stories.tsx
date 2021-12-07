@@ -1,27 +1,27 @@
 import React from 'react';
 import { ComponentMeta } from '@storybook/react';
 
-import Text from '../components/Text';
+import NesText from '../components/NesText';
 
 export const Main = ({ variant, component, text }: any) => (
   <div>
-    <Text
+    <NesText
       variant={variant}
       component={component}
     >
       { text }
-    </Text>
+    </NesText>
   </div>
 );
 
 export default {
-  title: 'Text',
+  title: 'NesText',
   args: {
     text: 'TEXT',
   },
   argTypes: {
     variant: {
-      options: ['', 'primary', 'success', 'warning', 'error', 'disabled'],
+      options: ['text', 'primary', 'success', 'warning', 'error', 'disabled'],
       control: { type: 'radio' },
     },
 
@@ -30,4 +30,4 @@ export default {
       control: { type: 'radio' },
     },
   },
-} as ComponentMeta<typeof Text>;
+} as ComponentMeta<typeof NesText>;

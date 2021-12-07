@@ -20,6 +20,8 @@
     // React
     "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/require-default-propss": "off",
 
     // Typescript
     "@typescript-eslint/brace-style": "off"

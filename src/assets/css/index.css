@@ -1,6 +1,7 @@
 :root {
   --background-default: #212529;
   --spacing: 8px;
+  --text-color: #FFFFFF;
 }
 
 html {
@@ -18,4 +19,8 @@ body {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+.text-color {
+  color: var(--text-color);
 }
