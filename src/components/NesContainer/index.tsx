@@ -3,11 +3,18 @@ import clsx from 'clsx';
 
 import NesContainerPropTypes from './NesContainerPropTypes';
 
-const NesCointainer: FC<NesContainerPropTypes> = ({ title, children }) => (
+const NesCointainer: FC<NesContainerPropTypes> = ({
+  title,
+  rounded = false,
+  children,
+}) => (
   <div
     className={clsx(
       'nes-container is-dark',
-      { 'with-title': Boolean(title) },
+      {
+        'with-title': Boolean(title),
+        'is-rounded': rounded,
+      },
     )}
   >
     { title && (

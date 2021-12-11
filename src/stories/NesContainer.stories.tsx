@@ -3,8 +3,11 @@ import { ComponentMeta } from '@storybook/react';
 
 import NesContainer from '../components/NesContainer';
 
-export const Main = ({ title, text }: any) => (
-  <NesContainer title={title}>
+export const Main = ({ title, text, rounded }: any) => (
+  <NesContainer
+    title={title}
+    rounded={rounded}
+  >
     { text }
   </NesContainer>
 );
@@ -14,5 +17,6 @@ export default {
   args: {
     title: 'TITLE',
     text: 'TEXT',
+    rounded: false,
   },
 } as ComponentMeta<typeof NesContainer>;
