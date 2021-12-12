@@ -1,5 +1,5 @@
+import React, { FC, memo } from 'react';
 import clsx from 'clsx';
-import React, { FC } from 'react';
 
 import NesCursorPropTypes from './NesCursorPropTypes';
 
@@ -17,4 +17,4 @@ const NesCursor: FC<NesCursorPropTypes> = ({
   </div>
 );
 
-export default NesCursor;
+export default memo(NesCursor);
