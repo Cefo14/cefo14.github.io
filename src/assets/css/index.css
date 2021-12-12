@@ -24,3 +24,8 @@ body {
 .text-color {
   color: var(--text-color);
 }
+
+.pixel-image {
+  display: block;
+  max-width: 100%;
+}
