@@ -5,7 +5,7 @@ import NesTextProps from './NesTextPropTypes';
 
 const NesText: FC<NesTextProps> = ({
   children,
-  variant = 'text',
+  variant = 'normal',
   component = 'div',
 }) => {
   const TextTagComponent = component;
@@ -15,8 +15,8 @@ const NesText: FC<NesTextProps> = ({
       className={clsx(
         'nes-text',
         {
-          [`is-${variant}`]: Boolean(variant),
-          'text-color': variant === 'text',
+          [`is-${variant}`]: variant !== 'normal',
+          'text-color': variant === 'normal',
         },
       )}
     >

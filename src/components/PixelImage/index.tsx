@@ -9,8 +9,8 @@ import PixelImagePropTypes from './PixelImagePropTypes';
 
 const PixelImage: FC<PixelImagePropTypes> = ({
   src,
-  width,
-  height,
+  width = 256,
+  height = 256,
   blur = 50,
   scale = 0.01,
 }) => {
