@@ -19,7 +19,7 @@ export default {
   },
   argTypes: {
     variant: {
-      options: ['primary', 'success', 'warning', 'error', 'disabled', 'normal'],
+      options: ['primary', 'success', 'warning', 'error', 'pattern', 'normal'],
       control: { type: 'radio' },
       defaultValue: 'normal',
     },
