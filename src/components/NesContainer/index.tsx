@@ -6,11 +6,13 @@ import NesContainerPropTypes from './NesContainerPropTypes';
 const NesCointainer: FC<NesContainerPropTypes> = ({
   title,
   rounded = false,
+  className = '',
   children,
 }) => (
   <div
     className={clsx(
       'nes-container is-dark',
+      className,
       {
         'with-title': Boolean(title),
         'is-rounded': rounded,

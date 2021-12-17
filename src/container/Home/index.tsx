@@ -2,7 +2,7 @@ import React from 'react';
 
 import NesText from '../../components/NesText';
 import NesContainer from '../../components/NesContainer';
-import NesProgress from '../../components/NesProgress';
+import NesStatistic from '../../components/NesStatistic';
 
 import useStyles from './useStyles';
 
@@ -29,19 +29,22 @@ const Home = () => {
         perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
         officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
       </NesContainer>
-      <NesContainer title="Stats">
-        <NesText>
-          Javascript (200/254)
-        </NesText>
-        <NesProgress value={75} maxValue={100} variant="success" />
-        <NesText>
-          PHP (200/254)
-        </NesText>
-        <NesProgress value={50} maxValue={100} variant="warning" />
-        <NesText>
-          Python (200/254)
-        </NesText>
-        <NesProgress value={25} maxValue={100} variant="error" />
+      <NesContainer title="Statistics">
+        <NesStatistic
+          name="Javascript"
+          value={250}
+          maxValue={255}
+        />
+        <NesStatistic
+          name="PHP"
+          value={127}
+          maxValue={255}
+        />
+        <NesStatistic
+          name="Python"
+          value={63}
+          maxValue={255}
+        />
       </NesContainer>
     </div>
   );
