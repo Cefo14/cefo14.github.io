@@ -5,7 +5,7 @@ import NesProgressPropTypes from './NesProgressPropTypes';
 
 const NesProgress: FC<NesProgressPropTypes> = ({
   value = 1,
-  max = 1,
+  maxValue = 10,
   variant = 'normal',
 }) => (
   <progress
@@ -16,7 +16,7 @@ const NesProgress: FC<NesProgressPropTypes> = ({
       },
     )}
     value={value}
-    max={max}
+    max={maxValue}
   />
 );
 

@@ -1,6 +1,6 @@
 interface NesProgressPropTypes {
   value?: number;
-  max?: number;
+  maxValue?: number;
   variant?: 'primary' | 'success' | 'warning' | 'error' | 'pattern' | 'normal'
 }
 

@@ -30,9 +30,18 @@ const Home = () => {
         officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
       </NesContainer>
       <NesContainer title="Stats">
-        <NesProgress value={75} max={100} variant="success" />
-        <NesProgress value={50} max={100} variant="warning" />
-        <NesProgress value={25} max={100} variant="error" />
+        <NesText>
+          Javascript (200/254)
+        </NesText>
+        <NesProgress value={75} maxValue={100} variant="success" />
+        <NesText>
+          PHP (200/254)
+        </NesText>
+        <NesProgress value={50} maxValue={100} variant="warning" />
+        <NesText>
+          Python (200/254)
+        </NesText>
+        <NesProgress value={25} maxValue={100} variant="error" />
       </NesContainer>
     </div>
   );

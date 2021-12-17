@@ -3,10 +3,10 @@ import { ComponentMeta } from '@storybook/react';
 
 import NesProgress from '../components/NesProgress';
 
-export const Main = ({ value, max, variant }: any) => (
+export const Main = ({ value, maxValue, variant }: any) => (
   <NesProgress
     value={value}
-    max={max}
+    maxValue={maxValue}
     variant={variant}
   />
 );
@@ -15,7 +15,7 @@ export default {
   title: 'NesProgress',
   args: {
     value: 1,
-    max: 1,
+    maxValue: 10,
   },
   argTypes: {
     variant: {
