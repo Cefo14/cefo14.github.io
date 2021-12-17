@@ -1,7 +1,8 @@
+export type NesProgressVariant = 'primary' | 'success' | 'warning' | 'error' | 'pattern' | 'normal';
 interface NesProgressPropTypes {
   value?: number;
   maxValue?: number;
-  variant?: 'primary' | 'success' | 'warning' | 'error' | 'pattern' | 'normal'
+  variant?: NesProgressVariant;
 }
 
 export default NesProgressPropTypes;
