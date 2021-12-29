@@ -6,6 +6,8 @@ import NesStatistic from '../../components/NesStatistic';
 
 import useStyles from './useStyles';
 
+const MAX_STATISTICS = 255;
+
 const Home = () => {
   const styles = useStyles();
 
@@ -29,21 +31,34 @@ const Home = () => {
         perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
         officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
       </NesContainer>
-      <NesContainer title="Statistics">
+      <NesContainer
+        title="Statistics"
+        className={styles.statisticContainer}
+      >
         <NesStatistic
           name="Javascript"
-          value={250}
-          maxValue={255}
-        />
-        <NesStatistic
-          name="PHP"
-          value={127}
-          maxValue={255}
+          value={234}
+          maxValue={MAX_STATISTICS}
         />
         <NesStatistic
           name="Python"
-          value={63}
-          maxValue={255}
+          value={152}
+          maxValue={MAX_STATISTICS}
+        />
+        <NesStatistic
+          name="PHP"
+          value={132}
+          maxValue={MAX_STATISTICS}
+        />
+        <NesStatistic
+          name="Shell Script"
+          value={102}
+          maxValue={MAX_STATISTICS}
+        />
+        <NesStatistic
+          name="Java"
+          value={66}
+          maxValue={MAX_STATISTICS}
         />
       </NesContainer>
     </div>
