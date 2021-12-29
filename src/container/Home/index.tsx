@@ -3,6 +3,7 @@ import React from 'react';
 import NesText from '../../components/NesText';
 import NesContainer from '../../components/NesContainer';
 import NesStatistic from '../../components/NesStatistic';
+import NesRPGDialog from '../../components/NesRPGDialog';
 
 import useStyles from './useStyles';
 
@@ -27,9 +28,11 @@ const Home = () => {
         </NesText>
       </NesContainer>
       <NesContainer title="Description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-        perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
-        officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
+        <NesRPGDialog>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+          perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
+          officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
+        </NesRPGDialog>
       </NesContainer>
       <NesContainer
         title="Statistics"
