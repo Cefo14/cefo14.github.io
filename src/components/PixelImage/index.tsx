@@ -6,6 +6,7 @@ import React, {
 } from 'react';
 
 import PixelImagePropTypes from './PixelImagePropTypes';
+import useStyles from './useStyles';
 
 const PixelImage: FC<PixelImagePropTypes> = ({
   src,
@@ -14,6 +15,7 @@ const PixelImage: FC<PixelImagePropTypes> = ({
   blur = 50,
   scale = 0.01,
 }) => {
+  const styles = useStyles();
   const imageRef = useRef<HTMLImageElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -61,7 +63,7 @@ const PixelImage: FC<PixelImagePropTypes> = ({
         src={src}
         width={width}
         height={height}
-        className="pixel-image"
+        className={styles.pixelImage}
         style={{
           objectFit: 'fill',
         }}
@@ -69,9 +71,9 @@ const PixelImage: FC<PixelImagePropTypes> = ({
       />
       <canvas
         ref={canvasRef}
-        className="pixel-image"
+        className={styles.pixelImage}
         style={{
-          display: 'non',
+          display: 'none',
         }}
       />
     </>
