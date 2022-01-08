@@ -5,6 +5,8 @@ import NesContainer from '../../components/NesContainer';
 import NesStatistic from '../../components/NesStatistic';
 import NesRPGDialog from '../../components/NesRPGDialog';
 
+import kirby8BitsImage from '../../assets/images/kirby_8bits.png';
+
 import useStyles from './useStyles';
 
 const MAX_STATISTICS = 255;
@@ -14,9 +16,17 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <NesText component="h1">
-        RPG Title
-      </NesText>
+      <div>
+        <img
+          alt="logo"
+          src={kirby8BitsImage}
+          width={200}
+          height={200}
+        />
+        <NesText component="h1">
+          Cefo14
+        </NesText>
+      </div>
       <NesContainer title="Player" rounded>
         <NesText variant="warning">
           Cefo14
