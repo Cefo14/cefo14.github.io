@@ -1,6 +1,8 @@
 import React, { FC, memo } from 'react';
 import clsx from 'clsx';
 
+import useStyles from './useStyles';
+
 import NesTextProps from './NesTextPropTypes';
 
 const NesText: FC<NesTextProps> = ({
@@ -8,6 +10,7 @@ const NesText: FC<NesTextProps> = ({
   variant = 'normal',
   component = 'div',
 }) => {
+  const styles = useStyles();
   const TextTagComponent = component;
 
   return (
@@ -18,6 +21,7 @@ const NesText: FC<NesTextProps> = ({
           [`is-${variant}`]: variant !== 'normal',
           'text-color': variant === 'normal',
         },
+        styles.childFontSize,
       )}
     >
       { children }

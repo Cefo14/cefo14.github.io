@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import 'bulma/css/bulma.min.css';
+import 'normalize.css';
+
 import './assets/css/nes.min.css';
 import './assets/css/index.css';
-import 'normalize.css';
 
 import App from './app';
 import reportWebVitals from './reportWebVitals';
