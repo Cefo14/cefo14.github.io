@@ -24,9 +24,9 @@ const NesCointainer: FC<NesContainerPropTypes> = ({
         { title }
       </p>
     )}
-    <div>
+    <>
       { children }
-    </div>
+    </>
   </div>
 );
 

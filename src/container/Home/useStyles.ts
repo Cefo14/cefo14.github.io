@@ -25,7 +25,8 @@ const useStyles = createUseStyles({
   },
 
   statisticContainer: {
-    '& > div > *:not(:last-child)': {
+    height: '100%',
+    '& > *:not(:last-child)': {
       marginBottom: '24px !important',
     },
   },
@@ -48,6 +49,14 @@ const useStyles = createUseStyles({
     alignSelf: 'flex-end',
   },
 
+  chartContainer: {
+    height: '100%',
+    '& > canvas': {
+      width: '100% !important',
+      height: '100% !important',
+    },
+  },
+
   // Media queries
   '@media (max-width: 767px)': {
     container: {
@@ -56,6 +65,11 @@ const useStyles = createUseStyles({
 
     descriptionContainer: {
       flexDirection: 'column',
+    },
+
+    chartContainer: {
+      width: 'auto',
+      height: '600px',
     },
   },
 });
