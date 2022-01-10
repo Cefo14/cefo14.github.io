@@ -1,9 +1,11 @@
+import { useState, useCallback } from 'react';
 import { Columns } from 'react-bulma-components';
 
 import NesText from '../../components/NesText';
 import NesContainer from '../../components/NesContainer';
 import NesStatistic from '../../components/NesStatistic';
 import NesRPGDialog from '../../components/NesRPGDialog';
+import NesButton from '../../components/NesButton';
 import DevIcon from '../../components/DevIcon';
 
 import kirby8BitsImage from '../../assets/images/kirby_8bits.png';
@@ -12,8 +14,29 @@ import useStyles from './useStyles';
 
 const MAX_STATISTICS = 255;
 
+const DESCRIPTION = [
+  `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+    perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
+    officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio. 
+  `,
+  `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+    perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
+    officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio. 
+  `.split('').reverse().join(''),
+];
+
 const Home = () => {
+  const [descriptionIndex, setDescriptionIndex] = useState(0);
+
   const styles = useStyles();
+
+  const onClickNextButton = useCallback(() => {
+    const maxIndex = DESCRIPTION.length;
+    if (descriptionIndex < maxIndex - 1) setDescriptionIndex(descriptionIndex + 1);
+    else setDescriptionIndex(0);
+  }, [descriptionIndex]);
 
   return (
     <div className={styles.container}>
@@ -61,13 +84,20 @@ const Home = () => {
       </Columns>
       <NesContainer
         title="Description"
-        className={styles.descriptionContainer}
       >
-        <NesRPGDialog>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          perspiciatis dolorum! Vero placeat numquam excepturi voluptates eligendi,
-          officia atque modi quo maiores vel natus ut suscipit, impedit incidunt iste optio.
-        </NesRPGDialog>
+        <div className={styles.descriptionContainer}>
+          <NesRPGDialog>
+            { DESCRIPTION[descriptionIndex] }
+          </NesRPGDialog>
+          <div className={styles.nextButtonContainer}>
+            <NesButton
+              variant="warning"
+              onClick={onClickNextButton}
+            >
+              Next
+            </NesButton>
+          </div>
+        </div>
       </NesContainer>
       <NesContainer
         title="Statistics"

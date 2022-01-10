@@ -18,7 +18,7 @@ const NesRPGDialog: FC<NesRPGDialogPropTypes> = ({ children = '' }) => {
   );
 
   const transitions = useTransition(letters, {
-    trail: 33,
+    trail: 20,
     from: { display: 'none' },
     enter: { display: '' },
   });

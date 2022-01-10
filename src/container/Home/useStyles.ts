@@ -17,7 +17,11 @@ const useStyles = createUseStyles({
   },
 
   descriptionContainer: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
     minHeight: '160px',
+    flexDirection: 'row',
   },
 
   statisticContainer: {
@@ -40,10 +44,18 @@ const useStyles = createUseStyles({
     marginLeft: '8px',
   },
 
+  nextButtonContainer: {
+    alignSelf: 'flex-end',
+  },
+
   // Media queries
   '@media (max-width: 767px)': {
     container: {
       width: '90%',
+    },
+
+    descriptionContainer: {
+      flexDirection: 'column',
     },
   },
 });
