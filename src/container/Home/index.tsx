@@ -152,10 +152,17 @@ const Home = () => {
       <div className={styles.center}>
         <NesText component="h1">
           Menu
-          <DevIcon
-            icon="github"
-            className={styles.githubIcon}
-          />
+          <a
+            href="https://github.com/Cefo14"
+            rel="noopener noreferrer"
+            target="_blank"
+            className={styles.iconLink}
+          >
+            <DevIcon
+              icon="github"
+              className={styles.githubIcon}
+            />
+          </a>
         </NesText>
       </div>
       <Columns>
@@ -241,7 +248,7 @@ const Home = () => {
         </Columns.Column>
       </Columns>
       <NesContainer
-        title="Skilss"
+        title="Skills"
         className={styles.skillsContainer}
       >
         <Columns>

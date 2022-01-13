@@ -61,6 +61,11 @@ const useStyles = createUseStyles({
 
   },
 
+  iconLink: {
+    color: 'inherit',
+    textDecoration: 'none',
+  },
+
   // Media queries
   '@media (max-width: 767px)': {
     container: {
