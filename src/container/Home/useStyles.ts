@@ -57,6 +57,10 @@ const useStyles = createUseStyles({
     },
   },
 
+  skillsContainer: {
+
+  },
+
   // Media queries
   '@media (max-width: 767px)': {
     container: {
@@ -65,6 +69,7 @@ const useStyles = createUseStyles({
 
     descriptionContainer: {
       flexDirection: 'column',
+      minHeight: '508px',
     },
 
     chartContainer: {

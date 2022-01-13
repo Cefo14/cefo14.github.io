@@ -40,12 +40,6 @@
       "rules": {
         "import/no-anonymous-default-export": "off"
       }
-    },
-    {
-      "files": ["**/*.tsx"],
-      "rules": {
-          "react/prop-types": "off"
-      }
-  }
+    }
   ]
 }

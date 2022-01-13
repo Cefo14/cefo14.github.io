@@ -9,6 +9,7 @@ import NesStatistic from '../../components/NesStatistic';
 import NesRPGDialog from '../../components/NesRPGDialog';
 import NesButton from '../../components/NesButton';
 import DevIcon from '../../components/DevIcon';
+import SkillBadge from '../../components/SkillBadge';
 
 import kirby8BitsImage from '../../assets/images/kirby_8bits.png';
 
@@ -49,6 +50,49 @@ const STATISTICS = [
   {
     label: 'SQL',
     level: 152,
+  },
+];
+
+const SKILLS = [
+  {
+    icon: 'angular',
+    title: 'Angular',
+    rate: 1.5,
+  },
+  {
+    icon: 'react',
+    title: 'React',
+    rate: 3,
+  },
+  {
+    icon: 'vue',
+    title: 'Vue',
+    rate: 2,
+  },
+  {
+    icon: 'nodejs',
+    title: 'Node JS',
+    rate: 3,
+  },
+  {
+    icon: 'docker',
+    title: 'Docker',
+    rate: 2.5,
+  },
+  {
+    icon: 'aws',
+    title: 'AWS',
+    rate: 2.5,
+  },
+  {
+    icon: 'bash',
+    title: 'Shell',
+    rate: 1.5,
+  },
+  {
+    icon: 'postgresql',
+    title: 'SQL',
+    rate: 2,
   },
 ];
 
@@ -184,7 +228,6 @@ const Home = () => {
         </Columns.Column>
         <Columns.Column>
           <NesContainer
-            title="Stats Chart"
             className={styles.chartContainer}
           >
             <ReactApexChart
@@ -197,6 +240,28 @@ const Home = () => {
           </NesContainer>
         </Columns.Column>
       </Columns>
+      <NesContainer
+        title="Skilss"
+        className={styles.skillsContainer}
+      >
+        <Columns>
+          {
+            SKILLS.map((skill) => (
+              <Columns.Column
+                key={skill.icon}
+                size={3}
+                className={styles.center}
+              >
+                <SkillBadge
+                  icon={skill.icon as any} // TODO fix obj type
+                  title={skill.title}
+                  rate={skill.rate}
+                />
+              </Columns.Column>
+            ))
+          }
+        </Columns>
+      </NesContainer>
     </div>
   );
 };

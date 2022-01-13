@@ -13,9 +13,10 @@ const ICON_MAP = {
   react: 'devicon-react-original colored',
   vue: 'devicon-vuejs-plain colored',
   nodejs: 'devicon-nodejs-plain colored',
-  bash: 'devicon-bash-plain colored',
+  bash: 'devicon-bash-plain',
   docker: 'devicon-docker-plain colored',
   aws: 'devicon-amazonwebservices-original colored',
+  postgresql: 'devicon-postgresql-plain colored',
   linkedin: 'devicon-linkedin-plain colored"',
 };
 

@@ -1,16 +1,19 @@
+export type DevIconName =
+| 'github'
+| 'javascript'
+| 'typescript'
+| 'angular'
+| 'react'
+| 'vue'
+| 'nodejs'
+| 'bash'
+| 'docker'
+| 'aws'
+| 'linkedin'
+| 'postgresql';
+
 interface DevIconPropTypes {
-  icon:
-  | 'github'
-  | 'javascript'
-  | 'typescript'
-  | 'angular'
-  | 'react'
-  | 'vue'
-  | 'nodejs'
-  | 'bash'
-  | 'docker'
-  | 'aws'
-  | 'linkedin'
+  icon: DevIconName;
   className?: string;
 }
 
