@@ -78,6 +78,7 @@ const useStyles = createUseStyles({
     },
 
     chartContainer: {
+      display: 'none', // TODO mobile
       width: 'auto',
       height: '600px',
     },
