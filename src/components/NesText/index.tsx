@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 import clsx from 'clsx';
 
 import useStyles from './useStyles';
@@ -9,6 +9,7 @@ const NesText: FC<NesTextProps> = ({
   children,
   variant = 'normal',
   component = 'div',
+  className = '',
 }) => {
   const styles = useStyles();
   const TextTagComponent = component;
@@ -21,7 +22,8 @@ const NesText: FC<NesTextProps> = ({
           [`is-${variant}`]: variant !== 'normal',
           'text-color': variant === 'normal',
         },
-        styles.childFontSize,
+        styles.nesText,
+        className,
       )}
     >
       { children }

@@ -1,10 +1,13 @@
-import React, { FC, memo, useMemo } from 'react';
+import { FC, memo, useMemo } from 'react';
 import { animated, useTransition } from 'react-spring';
 
 import NesText from '../NesText';
+import useStyles from './useStyles';
 import NesRPGDialogPropTypes from './NesRPGDialogPropTypes';
 
 const NesRPGDialog: FC<NesRPGDialogPropTypes> = ({ children = '' }) => {
+  const styles = useStyles();
+
   const letters = useMemo(
     () => (
       children
@@ -24,7 +27,7 @@ const NesRPGDialog: FC<NesRPGDialogPropTypes> = ({ children = '' }) => {
   });
 
   return (
-    <NesText>
+    <NesText className={styles.nestRPGDialog}>
       {
         transitions((style, item) => (
           <animated.span
