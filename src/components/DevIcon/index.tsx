@@ -18,6 +18,8 @@ const ICON_MAP = {
   aws: 'devicon-amazonwebservices-original colored',
   postgresql: 'devicon-postgresql-plain colored',
   linkedin: 'devicon-linkedin-plain colored"',
+  mongodb: 'devicon-mongodb-plain colored',
+  graphql: 'devicon-graphql-plain colored',
 };
 
 const DevIcon: FC<DevIconPropTypes> = ({ icon, className = '' }) => (

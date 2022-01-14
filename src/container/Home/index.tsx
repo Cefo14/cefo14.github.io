@@ -1,7 +1,6 @@
 import { useState, useCallback } from 'react';
 
 import { Columns } from 'react-bulma-components';
-import ReactApexChart from 'react-apexcharts';
 
 import NesText from '../../components/NesText';
 import NesContainer from '../../components/NesContainer';
@@ -12,6 +11,7 @@ import DevIcon from '../../components/DevIcon';
 import SkillBadge from '../../components/SkillBadge';
 
 import kirby8BitsImage from '../../assets/images/kirby_8bits.png';
+import kirby8SwordBitsGif from '../../assets/images/kirby_sword_8bits.gif';
 
 import useStyles from './useStyles';
 
@@ -94,47 +94,17 @@ const SKILLS = [
     title: 'SQL',
     rate: 2,
   },
-];
-
-const config = {
-  options: {
-    chart: {
-      toolbar: {
-        show: false,
-      },
-      foreColor: '#FFF',
-      fontFamily: '"Press Start 2P"',
-    },
-    xaxis: {
-      labels: {
-        show: true,
-        style: {
-          colors: STATISTICS.map(() => '#FFF'),
-          fontSize: '11px',
-          fontFamily: '"Press Start 2P"',
-        },
-      },
-    },
-    colors: ['#92cc41'],
-    stroke: {
-      width: 12,
-    },
-    fill: {
-      opacity: 1,
-    },
-    labels: STATISTICS.map((stat) => stat.label),
-    markers: {
-      size: 4,
-      strokeColors: '#FFF',
-      colors: STATISTICS.map(() => '#FFF'),
-    },
+  {
+    icon: 'mongodb',
+    title: 'No-SQL',
+    rate: 2,
   },
-  series: [
-    {
-      data: STATISTICS.map((stat) => stat.level),
-    },
-  ],
-};
+  {
+    icon: 'graphql',
+    title: 'Graphql',
+    rate: 2.5,
+  },
+];
 
 const Home = () => {
   const [descriptionIndex, setDescriptionIndex] = useState(0);
@@ -175,6 +145,7 @@ const Home = () => {
               src={kirby8BitsImage}
               width={200}
               height={200}
+              className={styles.avatar}
             />
           </NesContainer>
         </Columns.Column>
@@ -237,12 +208,9 @@ const Home = () => {
           <NesContainer
             className={styles.chartContainer}
           >
-            <ReactApexChart
-              options={config.options}
-              series={config.series}
-              type="radar"
-              height="100%"
-              width="100%"
+            <img
+              alt="kirby8SwordBitsGif"
+              src={kirby8SwordBitsGif}
             />
           </NesContainer>
         </Columns.Column>
@@ -251,12 +219,17 @@ const Home = () => {
         title="Skills"
         className={styles.skillsContainer}
       >
-        <Columns>
+        <Columns multiline>
           {
             SKILLS.map((skill) => (
               <Columns.Column
                 key={skill.icon}
-                size={3}
+                desktop={{
+                  size: 'one-fifth',
+                }}
+                tablet={{
+                  size: 'one-third',
+                }}
                 className={styles.center}
               >
                 <SkillBadge

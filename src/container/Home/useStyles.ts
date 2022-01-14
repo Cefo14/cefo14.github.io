@@ -50,11 +50,12 @@ const useStyles = createUseStyles({
   },
 
   chartContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    width: '100%',
     height: '100%',
-    '& > canvas': {
-      width: '100% !important',
-      height: '100% !important',
-    },
   },
 
   skillsContainer: {
@@ -64,6 +65,13 @@ const useStyles = createUseStyles({
   iconLink: {
     color: 'inherit',
     textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'none',
+    },
+  },
+
+  avatar: {
+
   },
 
   // Media queries
@@ -78,9 +86,11 @@ const useStyles = createUseStyles({
     },
 
     chartContainer: {
-      display: 'none', // TODO mobile
       width: 'auto',
-      height: '600px',
+    },
+
+    avatar: {
+      margin: '16px 0px !important',
     },
   },
 });

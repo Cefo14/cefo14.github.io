@@ -11,12 +11,12 @@ const useStyles = createUseStyles({
     alignItems: 'center',
 
     '& > *:not(:last-child)': {
-      marginBottom: '12px',
+      marginBottom: '16px',
     },
   },
 
   devIcon: {
-    fontSize: '50px',
+    fontSize: '54px',
   },
 
   nesReactionRate: {

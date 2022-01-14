@@ -10,7 +10,9 @@ export type DevIconName =
 | 'docker'
 | 'aws'
 | 'linkedin'
-| 'postgresql';
+| 'postgresql'
+| 'mongodb'
+| 'graphql';
 
 interface DevIconPropTypes {
   icon: DevIconName;
