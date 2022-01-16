@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 
 import RoundedImagePropTypes from './RoundedImagePropTypes';
 import useStyles from './useStyles';

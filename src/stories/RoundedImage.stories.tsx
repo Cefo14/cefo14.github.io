@@ -1,4 +1,3 @@
-import React from 'react';
 import { ComponentMeta } from '@storybook/react';
 
 import RoundedImage from '../components/RoundedImage';

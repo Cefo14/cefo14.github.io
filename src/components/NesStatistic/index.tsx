@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 
 import NesText from '../NesText';
 import NesProgressStatus from '../NesProgressStatus';
