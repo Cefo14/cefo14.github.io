@@ -126,6 +126,9 @@ const Home = () => {
             <img
               alt="kirby8SwordBitsGif"
               src={kirby8SwordBitsGif}
+              width="max-content"
+              height="max-content"
+              loading="lazy"
             />
           </NesContainer>
         </Columns.Column>
