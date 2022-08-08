@@ -36,14 +36,13 @@ export const STATISTICS = [
     label: 'SQL',
     level: 152,
   },
+  {
+    label: 'Shell Script',
+    level: 137,
+  },
 ];
 
 export const SKILLS = [
-  {
-    icon: 'angular',
-    title: 'Angular',
-    rate: 1.5,
-  },
   {
     icon: 'react',
     title: 'React',
@@ -55,9 +54,19 @@ export const SKILLS = [
     rate: 2,
   },
   {
+    icon: 'angular',
+    title: 'Angular',
+    rate: 1.5,
+  },
+  {
     icon: 'nodejs',
     title: 'Node JS',
     rate: 3,
+  },
+  {
+    icon: 'graphql',
+    title: 'Graphql',
+    rate: 2.5,
   },
   {
     icon: 'docker',
@@ -70,9 +79,9 @@ export const SKILLS = [
     rate: 2.5,
   },
   {
-    icon: 'bash',
-    title: 'Shell',
-    rate: 1.5,
+    icon: 'linux',
+    title: 'Linux',
+    rate: 2,
   },
   {
     icon: 'postgresql',
@@ -83,10 +92,5 @@ export const SKILLS = [
     icon: 'mongodb',
     title: 'No-SQL',
     rate: 2,
-  },
-  {
-    icon: 'graphql',
-    title: 'Graphql',
-    rate: 2.5,
   },
 ];

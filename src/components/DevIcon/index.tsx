@@ -20,6 +20,7 @@ const ICON_MAP = {
   linkedin: 'devicon-linkedin-plain colored"',
   mongodb: 'devicon-mongodb-plain colored',
   graphql: 'devicon-graphql-plain colored',
+  linux: 'devicon-linux-plain',
 };
 
 const DevIcon: FC<DevIconPropTypes> = ({ icon, className = '' }) => (
