@@ -20,7 +20,6 @@ const NesText: FC<NesTextProps> = ({
         'nes-text',
         {
           [`is-${variant}`]: variant !== 'normal',
-          'text-color': variant === 'normal',
         },
         styles.nesText,
         className,

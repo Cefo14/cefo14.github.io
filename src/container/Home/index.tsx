@@ -9,6 +9,7 @@ import NesRPGDialog from '../../components/NesRPGDialog';
 import NesButton from '../../components/NesButton';
 import DevIcon from '../../components/DevIcon';
 import SkillBadge from '../../components/SkillBadge';
+import Container from '../../components/Container';
 
 import kirby8BitsImage from '../../assets/images/kirby_8bits.png';
 import kirby8SwordBitsGif from '../../assets/images/kirby_sword_8bits.gif';
@@ -33,7 +34,7 @@ const Home = () => {
   }, [descriptionIndex]);
 
   return (
-    <div className={styles.container}>
+    <Container className={styles.container} maxWidth="lg">
       <div className={styles.center}>
         <NesText component="h1">
           Menu
@@ -160,7 +161,7 @@ const Home = () => {
           }
         </Columns>
       </NesContainer>
-    </div>
+    </Container>
   );
 };
 

@@ -1,0 +1,28 @@
+.Container__root {
+  padding: 0 calc(var(--spacing) * 2);
+  margin: 0 auto;
+}
+
+.Container__root--xl {
+  max-width: 1440px;
+}
+
+.Container__root--lg {
+  max-width: 1024px;
+}
+
+.Container__root--md {
+  max-width: 768px;
+}
+
+.Container__root--sm {
+  max-width: 425px;
+}
+
+.Container__root--xs {
+  max-width: 375px;
+}
+
+.Container__root--no-padding {
+  padding: 0px;
+}

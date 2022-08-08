@@ -3,9 +3,6 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   // Containers
   container: {
-    width: '75%',
-    maxWidth: '1080px',
-    margin: '0 auto',
     '& > *': {
       marginBottom: '32px !important',
     },
@@ -77,10 +74,6 @@ const useStyles = createUseStyles({
 
   // Media queries
   '@media (max-width: 767px)': {
-    container: {
-      width: '90%',
-    },
-
     descriptionContainer: {
       flexDirection: 'column',
       minHeight: '425px',
