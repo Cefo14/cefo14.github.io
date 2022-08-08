@@ -58,7 +58,10 @@ const useStyles = createUseStyles({
   },
 
   dialogContainer: {
-    minHeight: '100px',
+    minHeight: '145px',
+    '@media (max-width:600px)': {
+      minHeight: '385px',
+    },
   },
 
   nextButtonContainer: {
