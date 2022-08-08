@@ -1,63 +1,18 @@
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
-  // Containers
   container: {
     '& > *': {
-      marginBottom: '32px !important',
+      marginBottom: 'calc(var(--spacing) * 4) !important',
     },
   },
 
-  roleNameContainer: {
-    '& > *:not(:last-child)': {
-      marginBottom: '40px',
-    },
-  },
-
-  descriptionContainer: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    minHeight: '160px',
-    flexDirection: 'row',
-  },
-
-  statisticContainer: {
-    height: '100%',
-    '& > *:not(:last-child)': {
-      marginBottom: '24px !important',
-    },
-  },
-
-  // Fixers
-  center: {
+  titleSection: {
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
-    width: '100%',
-    height: '100%',
-  },
-
-  githubIcon: {
-    marginLeft: '8px',
-  },
-
-  nextButtonContainer: {
-    alignSelf: 'flex-end',
-  },
-
-  chartContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-    width: '100%',
-    height: '100%',
-  },
-
-  skillsContainer: {
-
+    gap: 'var(--spacing)',
   },
 
   iconLink: {
@@ -68,24 +23,87 @@ const useStyles = createUseStyles({
     },
   },
 
-  avatar: {
+  profileSection: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 'calc(var(--spacing) * 2)',
+  },
+
+  avatarContainer: {
+    flexGrow: 1,
+    '& > div': {
+      width: '100%',
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      alignContent: 'center',
+      justifyContent: 'center',
+    },
+  },
+
+  roleNameContainer: {
+    flexGrow: 2,
+    display: 'grid',
+    gap: 'calc(var(--spacing) * 2)',
+  },
+
+  descriptionSection: {
 
   },
 
-  // Media queries
-  '@media (max-width: 767px)': {
-    descriptionContainer: {
-      flexDirection: 'column',
-      minHeight: '425px',
-    },
+  descriptionContainer: {
+    display: 'grid',
+    gap: 'calc(var(--spacing) * 2)',
+  },
 
-    chartContainer: {
-      width: 'auto',
-    },
+  dialogContainer: {
+    minHeight: '100px',
+  },
 
-    avatar: {
-      margin: '16px 0px !important',
+  nextButtonContainer: {
+    alignSelf: 'flex-end',
+    justifySelf: 'flex-end',
+  },
+
+  statisticSection: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 'calc(var(--spacing) * 2)',
+  },
+
+  statisticContainer: {
+    flexGrow: 1,
+    '& > *:not(:last-child)': {
+      marginBottom: 'calc(var(--spacing) * 2)',
     },
+  },
+
+  statisticImageContainer: {
+    flexGrow: 1,
+  },
+
+  skillsSection: {
+
+  },
+
+  skillsContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    // gap: 'calc(var(--spacing) * 2)', // TODO ?
+  },
+
+  // Fixers
+  center: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%',
   },
 });
 

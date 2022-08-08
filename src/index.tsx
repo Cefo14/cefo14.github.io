@@ -1,7 +1,6 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 
-import 'bulma/css/bulma.min.css';
 import 'normalize.css';
 
 import './assets/css/nes.min.css';
