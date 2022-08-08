@@ -118,17 +118,15 @@ const Home = () => {
             ))
           }
         </NesContainer>
-        <div className={styles.statisticImageContainer}>
-          <NesContainer>
-            <img
-              alt="kirby8SwordBitsGif"
-              src={kirby8SwordBitsGif}
-              width="100%"
-              height="100%"
-              loading="lazy"
-            />
-          </NesContainer>
-        </div>
+        <NesContainer className={styles.statisticImageContainer}>
+          <img
+            alt="kirby8SwordBitsGif"
+            src={kirby8SwordBitsGif}
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
+        </NesContainer>
       </div>
 
       <NesContainer

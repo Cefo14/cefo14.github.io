@@ -73,7 +73,7 @@ const useStyles = createUseStyles({
   },
 
   statisticContainer: {
-    flexGrow: 1,
+    flexGrow: 2,
     '& > *:not(:last-child)': {
       marginBottom: 'calc(var(--spacing) * 2)',
     },
@@ -81,6 +81,10 @@ const useStyles = createUseStyles({
 
   statisticImageContainer: {
     flexGrow: 1,
+    '& img': {
+      maxWidth: '336px',
+      objectFit: 'contain',
+    },
   },
 
   skillsSection: {
